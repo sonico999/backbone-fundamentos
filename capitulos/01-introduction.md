@@ -16,39 +16,39 @@ En "Desarrollo de aplicaciones Backbone.js," Yo y algunos autores experimentados
 
 Una serie de marcos modernos de JavaScript proporciona a los desarrolladores un camino fácil para la organización de su código utilizando variaciones de un patrón conocido como MVC (Model-View-Controller). MVC separa la logica de una aplicación en tres partes:
 
-* Models represent the domain-specific knowledge and data in an application. Think of this as being a ‘type’ of data you can model — like a User, Photo, or Todo note. Models can notify observers when their state changes.
-* Views typically constitute the user interface in an application (e.g., markup and templates), but don’t have to be. They observe Models, but don’t directly communicate with them.
-* Controllers handle input (e.g., clicks, user actions) and update Models. 
+* Los Modelos representan los datos de un modelo específico en una aplicación. Piense en esto como un "tipo" de datos que puede modelar -- como un usuario, fotos o una nota de Todo. Los modelos pueden notificar a los observadores cuando cambian de estado.
+* Las Vistas normalmente constituyen la interfaz de usuario en una aplicación (por ejemplo, el marcado y plantillas), pero no son. Observan modelos, pero no se comunican directamente con ellos.
+* Los Controladores manejan la entrada (por ejemplo, los clicks, las acciones del usuario) y actualizan los modelos.
 
-Thus, in an MVC application, user input is acted upon by Controllers which update Models. Views observe Models and update the user interface when changes occur.
+Por lo tanto, en una aplicación MVC, la entrada del usuario recibe la acción de los controladores ¿Cual modelo se actualiza. Las Vistas observan a los modelos y actualizan la interfaz de usuario cuando se producen cambios.
 
-JavaScript MVC frameworks don’t always strictly follow the above pattern. Some solutions (including Backbone.js) merge the responsibility of the Controller into the View, while other approaches add additional components into the mix.
+Los Frameworks JavaScript MVC no siempre siguen estrictamente el patrón anterior. Algunas soluciones (incluyendo Backbone.js) fusionan la responsabilidad del controlador en la vista, mientras que otros enfoques añaden componentes adicionales conbinandolos.
 
-For this reason we refer to such frameworks as following the MV* pattern; that is, you’re likely to have a Model and a View, but a distinct Controller might not be present and other components may come into play.
+Por esta razón nos referimos a los frameworks como partidarios del modelo MV *; es decir, es muy probable que tenga un modelo y de una vista, pero un controlador podría no estar presente y otros componentes pueden entrar en juego.
 
-### What is Backbone.js?
+### Que es Backbone.js?
 
 ![](img/backbonejsorg.jpg)
 
-Backbone.js is a lightweight JavaScript library that adds structure to your client-side code. It makes it easy to manage and decouple concerns in your application, leaving you with code that is more maintainable in the long term.
+Backbone.js es una biblioteca JavaScript ligera que añade estructura a su código de cliente. Hace que sea fácil de manejar y separan la logica en su aplicación, dejándole con un código que es más fácil de mantener en un largo plazo.
 
-Developers commonly use libraries like Backbone.js to create single-page applications (SPAs). SPAs are web applications that load into the browser and then react to data changes on the client side without requiring complete page refreshes from the server.
+Los desarrolladores utilizan habitualmente las bibliotecas como Backbone.js para crear aplicaciones de una sola página (SPAs). SPAs Los desarrolladores utilizan habitualmente las bibliotecas como Backbone.js para crear aplicaciones de una sola página (ZEPA). ZEPA son aplicaciones web que se cargan en el navegador y luego reaccionan a los cambios de datos en el lado del cliente sin necesidad de actualizar la página completa desde el servidor.
 
-Backbone is mature, popular, and has both a vibrant developer community as well as a wealth of plugins and extensions available that build upon it. It has been used to create non-trivial applications by companies such as Disqus, Walmart, SoundCloud and LinkedIn.
+Backbone es maduro, popular, y tiene una comunidad de desarrolladores entusiasmada, así como una gran cantidad de plugins y extensiones disponibles que se basan en ella. Se ha utilizado para crear aplicaciones no triviales por empresas como Disqus, Walmart, SoundCloud and LinkedIn.
 
-Backbone focuses on giving you helpful methods for querying and manipulating your data rather than re-inventing the JavaScript object model. It's a library, rather than a framework, that plays well with others and scales well, from embedded widgets to large-scale applications.
+Backbone se centra en darle métodos útiles para consultar y manipular los datos en lugar de reinventar el modelo de objetos de JavaScript. Es una biblioteca, en ves de un framework, que juega bien con los demás y funciona bien, a partir de widgets integrados a aplicaciones de gran escala.
 
-As it's small, there is also less your users have to download on mobile or slower connections. The entire Backbone source can be read and understood in just a few hours.
+Como es pequeño, también hay poco que descargar en conexiones móviles o lentas. El código entero de Backbone puede ser leído y comprendido en tan sólo unas horas.
 
-### When Do I Need A JavaScript MVC Framework?
+### ¿Cuándo necesito un Framework MVC JavaScript?
 
-When building a single-page application using JavaScript, whether it involves a complex user interface or is simply trying to reduce the number of HTTP requests required for new Views, you will likely find yourself inventing many of the pieces that make up an MV* framework.
+Cuando la construcción de una aplicación de una sola página usando JavaScript, si se trata de una interfaz de usuario compleja o simplemente está tratando de reducir el número de peticiones HTTP requeridos para los nuevos Vistas, es probable que te tengas que inventar muchas de las piezas que conforman un marco MV * .
 
-At the outset, it isn’t terribly difficult to write your own application framework that offers some opinionated way to avoid spaghetti code; however, to say that it is equally as trivial to write something as robust as Backbone would be a grossly incorrect assumption.
+En primer lugar, no es terriblemente difícil de escribir su propio Framework de una aplicación, que ofrece una manera obstinada para evitar código espagueti; sin embargo, decir que es igual de trivial para escribir algo tan robusto como Backbone sería una suposición manifiestamente incorrecta.
 
-There’s a lot more that goes into structuring an application than tying together a DOM manipulation library, templating, and routing. Mature MV* frameworks typically include not only the pieces you would find yourself writing, but also include solutions to problems you’ll find yourself running into later on down the road. This is a time-saver that you shouldn’t underestimate the value of.
+Hay mucho más que entra en la estructuración de una aplicación que atando una biblioteca de manipulación de DOM, plantillas, y el enrutamiento. Frameworks Maduros MV * típicamente incluyen no sólo las piezas que tendrpias que escribir, pero también incluyen soluciones a los problemas que te encuentras en el camino. Esto es un ahorro de tiempo en que no hay que subestimar su valor.
 
-So, where will you likely need an MV* framework and where won’t you?
+Así que, ¿dónde probablemente necesitará un framework MV * y dónde no?
 
 If you’re writing an application where much of the heavy lifting for view rendering and data manipulation will be occurring in the browser, you may find a JavaScript MV* framework useful. Examples of applications that fall into this category are GMail, NewsBlur and the LinkedIn mobile app.
 
