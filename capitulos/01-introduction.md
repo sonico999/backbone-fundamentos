@@ -1,6 +1,6 @@
-# Introduction
+# Introducción
 
-Frank Lloyd Wright once said “You can’t make an architect. You can however open the doors and windows toward the light as you see it.” In this book, I hope to shed some light on how to improve the structure of your web applications, opening doors to what will hopefully be more maintainable, readable applications in your future.
+Frank Lloyd Wright dijo una vez “No se puede hacer un arquitecto. Sin embargo, puedes abrir las puertas y ventanas hacia las luz.” En este libro, Espero mostrarles algo de luz sobre la forma de mejorar la estructura de las aplicaciones web, abriendo las puertas a lo que esperamos sean aplicaciones mantenibles, legibles en el futuro.
 
 The goal of all architecture is to build something well; in our case, to craft code that is enduring and delights both ourselves and the developers who will maintain our code long after we are gone. We all want our architecture to be simple, yet beautiful.
 
