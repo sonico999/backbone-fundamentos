@@ -2,19 +2,19 @@
 
 Frank Lloyd Wright dijo una vez “No se puede hacer un arquitecto. Sin embargo, puedes abrir las puertas y ventanas hacia las luz.” En este libro, Espero mostrarles algo de luz sobre la forma de mejorar la estructura de las aplicaciones web, abriendo las puertas a lo que esperamos sean aplicaciones mantenibles, legibles en el futuro.
 
-The goal of all architecture is to build something well; in our case, to craft code that is enduring and delights both ourselves and the developers who will maintain our code long after we are gone. We all want our architecture to be simple, yet beautiful.
+El objetivo de toda la arquitectura es construir algo parecido; en nuestro caso, hasta un código que es duradero y encanta tanto a nosotros y a los desarrolladores que mantendrán nuestro código mucho despues que que nos hayamos ido.Todos queremos que nuestra arquitectura se simple pero hermosa.
 
-Modern JavaScript frameworks and libraries can bring structure and organization to your projects, establishing a maintainable foundation right from the start. They build on the trials and tribulations of developers who have had to work around callback chaos similar to that which you are facing now or may in the near future.
+Frameworks y bibliotecas modernas de javascript pueden traer estructura y organización a nuestros proyectos, estableciendo un fundamento mantenibles desde el principio. Se basan en ensayos y tribulaciones de los desarrolladores que han tenido que solucionar el caos de una retrollamada similar a la que se enfrentan o podrán en un futuro cercano.
 
-When developing applications using just jQuery, the piece missing is a way to structure and organize your code. It's very easy to create a JavaScript app that ends up a tangled mess of jQuery selectors and callbacks, all desperately trying to keep data in sync between the HTML for your UI, the logic in your JavaScript, and calls to your API for data.
+Al desarrollar aplicaciones utilizando sólo jQuery, la pieza faltante es una manera de estructurar y organizar el código. Es muy fácil crear una aplicación JavaScript que termina en una maraña de selectores y callbacks de jQuery, tratando desesperadamente de mantener los datos sincronizados entre el código HTML para su interfaz de usuario, la lógica en JavaScript, y las llamadas a su API para los datos.
 
-Without something to help tame the mess, you're likely to string together a set of independent plugins and libraries to make up the functionality or build everything yourself from scratch and have to maintain it yourself. Backbone solves this problem for you, providing a way to cleanly organize code, separating responsibilities into recognizable pieces that are easy to maintain.
+Sin nada para ayudar a domar el desorden, es probable encadenando un conjunto de plugins y librerías independientes para compensar la funcionalidad o construir todo usted mismo a partir de cero, teniendose que mantener por sí mismo. Backbone te resuelve este problema, proporcionando una forma de organizar limpiamente tu código, la separación de responsabilidades en partes identificables que son fáciles de mantener.
 
-In "Developing Backbone.js Applications," I and a number of other experienced authors will show you how to improve your web application structure using the popular JavaScript library, Backbone.js
+En "Desarrollo de aplicaciones Backbone.js," Yo y algunos autores experimentados te mostraré cómo mejorar tu estructura de aplicaciones web utilizando la biblioteca popular de JavaScript, Backbone.js
 
-### What Is MVC?
+### Qué es MVC?
 
-A number of modern JavaScript frameworks provide developers an easy path to organizing their code using variations of a pattern known as MVC (Model-View-Controller). MVC separates the concerns in an application into three parts:
+Una serie de marcos modernos de JavaScript proporciona a los desarrolladores un camino fácil para la organización de su código utilizando variaciones de un patrón conocido como MVC (Model-View-Controller). MVC separa la logica de una aplicación en tres partes:
 
 * Models represent the domain-specific knowledge and data in an application. Think of this as being a ‘type’ of data you can model — like a User, Photo, or Todo note. Models can notify observers when their state changes.
 * Views typically constitute the user interface in an application (e.g., markup and templates), but don’t have to be. They observe Models, but don’t directly communicate with them.
