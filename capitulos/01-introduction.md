@@ -50,20 +50,20 @@ Hay mucho más que entra en la estructuración de una aplicación que atando una
 
 Así que, ¿dónde probablemente necesitará un framework MV * y dónde no?
 
-If you’re writing an application where much of the heavy lifting for view rendering and data manipulation will be occurring in the browser, you may find a JavaScript MV* framework useful. Examples of applications that fall into this category are GMail, NewsBlur and the LinkedIn mobile app.
+Si usted está escribiendo una aplicación donde la gran parte del trabajo pesado para la representación de vista y manipulación de datos estarán ocurriendo en el navegador, es posible encontrar un marco de JavaScript MV * útil. Ejemplos, las aplicaciones que entran en esta categoría son GMail, NewsBlur y la aplicación móvil de LinkedIn.
 
-These types of applications typically download a single payload containing all the scripts, stylesheets, and markup users need for common tasks and then perform a lot of additional behavior in the background. For instance, it’s trivial to switch between reading an email or document to writing one without sending a new page request to the server.
+Este tipo de aplicaciones suelen descargar una sola carga útil que contiene todos los scripts, hojas de estilo, que muchos usuarios necesitan para tareas comunes y luego realizar una gran cantidad de comportamiento adicional en el fondo. Por ejemplo, es trivial para alternar entre la lectura de un correo electrónico o un documento escrito a uno sin necesidad de enviar una nueva petición al servidor.
 
-If, however, you’re building an application that still relies on the server for most of the heavy-lifting of page/view rendering and you’re just using a little JavaScript or jQuery to make things more interactive, an MV* framework may be overkill. There certainly are complex Web applications where the partial rendering of views can be coupled with a single-page application effectively, but for everything else, you may find yourself better sticking to a simpler setup.
+Sin embargo, si usted está construyendo una aplicación que todavía se basa en el servidor para la mayor parte del trabajo pesado de la página/vista de renderizado y estás usando un poco de JavaScript o jQuery para hacerlas más interactivas, en un marco MV * pueden ser excesivos. Sin duda hay aplicaciones Web complejas donde la representación parcial de puntos de vista se pueden acoplar con una aplicación de una sola página con eficacia, pero para todo lo demás, puede que te encuentres mejor apegarse a una configuración más sencilla.
 
-Maturity in software (framework) development isn't simply about how long a framework has been around. It's about how solid the framework is and more importantly how well it's evolved to fill its role. Has it become more effective at solving common problems? Does it continue to improve as developers build larger and more complex applications with it?
+La madurez en software (marco) el desarrollo no es simplemente sobre cuánto tiempo un framework tiene alrededor. Es acerca de la solidez de la estructura y lo más importante es lo bien que ha evolucionado para llenar su papel. Se ha vuelto más eficaz en la solución de los problemas comunes? ¿Sigue mejorando a medida que los desarrolladores a crear aplicaciones más grandes y complejas con ella?
 
 
-### Why Consider Backbone.js?
+### ¿Por qué considerar Backbone.js?
 
-Backbone provides a minimal set of data-structuring (Models, Collections) and user interface (Views, URLs) primitives that are helpful when building dynamic applications using JavaScript. It's not opinionated, meaning you have the freedom and flexibility to build the best experience for your web application how you see fit. You can either use the prescribed architecture it offers out of the box or extend it to meet your requirements.
+Backbone ofrece un conjunto mínimo de estructuración de datos (modelos, colecciones) y la interfaz de usuario (Vistas, URL) primitivas que son útiles al crear aplicaciones dinámicas utilizando JavaScript. No es obstinado, lo que significa que tiene la libertad y flexibilidad para crear la mejor experiencia para su aplicación web cómo mejor le parezca. Usted puede utilizar la arquitectura prescrita que ofrece fuera de lo estabecido o ampliarla para satisfacer sus necesidades.
 
-The library doesn't focus on widgets or replacing the way you structure objects - it just supplies you with utilities for manipulating and querying data in your application. It also doesn't prescribe a specific template engine - while you are free to use the Micro-templating offered by Underscore.js (one of its dependencies), views can bind to HTML constructed using your templating solution of choice.
+La biblioteca no se centra en los widgets o sustitución de la forma en que la estructura de los objetos - sólo le proporciona utilidades para la manipulación y consulta de datos en la aplicación. También no prescribe un motor de plantillas específicas -, mientras que usted es libre de utilizar el micro-plantillas que ofrece, Underscore.js (una de sus dependencias), puntos de vista se puede unir a HTML construido usando su solución de plantillas de su elección.
 
 Looking at the [large](http://backbonejs.org/#examples) number of applications built with Backbone, it's clear that it scales well. Backbone also works quite well with other libraries, meaning you can embed Backbone widgets in an application written with AngularJS, use it with TypeScript, or just use an individual class (like Models) as a data backer for simpler apps.
 
