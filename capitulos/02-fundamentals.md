@@ -4,11 +4,11 @@ Los patrones de diseño son soluciones a los problemas comunes de desarrollo que
 
 Históricamente, los desarrolladores que crean aplicaciones de escritorio y de servidor-clase han tenido una gran cantidad de patrones de diseño disponibles para apoyarse, pero sólo ha sido en los últimos años que estos patrones han sido aplicadas al desarrollo del lado del cliente.
 
-In this chapter, we're going to explore the evolution of the Model-View-Controller (MVC) design pattern and get our first look at how Backbone.js allows us to apply this pattern to client-side development.
+En este capítulo, vamos a explorar la evolución del patrón de diseño Modelo-Vista-Controlador (MVC) y obtener nuestro primer vistazo de cómo Backbone.js nos permite aplicar este patrón de desarrollo en el cliente.
 
 ## MVC
 
-MVC es un patrón de diseño arquitectónico que anima a la organización a través de una mejor separacion de la ogica de la aplicación. Se impone el aislamiento de los datos de negocio (modelos) de interfaces de usuario (Vistas), con un tercer componente (Controladores) gestionar tradicionalmente la lógica, la entrada de usuario, y la coordinación de Modelos y Vistas. El patrón fue diseñado originalmente por [Trygve Reenskaug](http://en.wikipedia.org/wiki/Trygve_Reenskaug) mientras se trabaja en Smalltalk-80 (1979), donde se llamó inicialmente Model-View-Controller-Editor. MVC se describe en profundidad en [“Design Patterns: Elements of Reusable Object-Oriented Software”](http://www.amazon.co.uk/Design-patterns-elements-reusable-object-oriented/dp/0201633612) (The "GoF" or “Gang of Four” book) en 1994, que tuvo un papel en la popularización de su uso.
+MVC es un patrón de diseño arquitectónico que anima a la organización a través de una mejor separacion de la ogica de la aplicación. Se impone el aislamiento de los datos de negocio (modelos) de interfaces de usuario (Vistas), con un tercer componente (Controladores) que gestiona tradicionalmente la lógica, la entrada de usuario, y la coordinación de Modelos y Vistas. El patrón fue diseñado originalmente por [Trygve Reenskaug](http://en.wikipedia.org/wiki/Trygve_Reenskaug) mientras se trabaja en Smalltalk-80 (1979), donde se llamó inicialmente Model-View-Controller-Editor. MVC se describe en profundidad en [“Design Patterns: Elements of Reusable Object-Oriented Software”](http://www.amazon.co.uk/Design-patterns-elements-reusable-object-oriented/dp/0201633612) (The "GoF" or “Gang of Four” book) en 1994, que tuvo un papel en la popularización de su uso.
 
 
 ### Smalltalk-80 MVC
