@@ -1,8 +1,8 @@
-# Backbone Basics
+# Backbone Básico
 
-In this section, you'll learn the essentials of Backbone's models, views, collections, events, and routers. This isn't by any means a replacement for the official documentation, but it will help you understand many of the core concepts behind Backbone before you start building applications using it.
+En esta sección, usted aprenderá los fundamentos de Backbone, modelos, vistas, colecciones, eventos y routers. Esto no es de ninguna manera un sustituto de la documentación oficial, pero le ayudará a entender muchos de los conceptos fundamentales de Backbone antes de empezar la construcción de aplicaciones.
 
-### Getting set up
+### Como configurar
 
 Before we dive into more code examples, let's define some boilerplate markup you can use to specify the dependencies Backbone requires. This boilerplate can be reused in many ways with little to no alteration and will allow you to run code from examples with ease.
 
